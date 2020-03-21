@@ -20,6 +20,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     case 'L': socket.emit('update', JSON.stringify([ { id: 'id_hulk', actions: ['L'] } ])); break;
                     case 'U': socket.emit('update', JSON.stringify([ { id: 'id_hulk', actions: ['U'] } ])); break;
                     case 'D': socket.emit('update', JSON.stringify([ { id: 'id_hulk', actions: ['D'] } ])); break;
+                    case 'A': socket.emit('update', JSON.stringify([ { id: 'id_hulk', actions: ['A'] } ])); break;
+                    case 'B': socket.emit('update', JSON.stringify([ { id: 'id_hulk', actions: ['B'] } ])); break;
+                    case 'X': socket.emit('update', JSON.stringify([ { id: 'id_hulk', actions: ['X'] } ])); break;
+                    case '0': socket.emit('update', JSON.stringify([ { id: 'id_hulk', actions: ['0'] } ])); break;
                 }
             });
         }).catch((error) => {
